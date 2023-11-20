@@ -6,13 +6,9 @@
  */
 
 import React from 'react';
-import { useColorScheme, View, Text, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 
-
-import {
-  Colors,
-} from 'react-native/Libraries/NewAppScreen';
-import BlueBackground from './android/app/src/components/BlueBackground';
+import LoginScreen from './android/app/src/components/LoginScreen';
 
 
 
@@ -20,8 +16,7 @@ function App(): JSX.Element {
 
   return (
     <View style={styles.container}>
-    
-      <BlueBackground />
+      <LoginScreen />
       </View>
   );
 }
@@ -29,6 +24,7 @@ function App(): JSX.Element {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    justifyContent: 'center',
   },
 });
 
